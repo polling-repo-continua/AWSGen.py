@@ -1,6 +1,7 @@
 ### AWS S3 Bucket Name Generator
 ---
 
-Description
---
-- cc
+__AWSGen.py__ is a simple tool for generates permutations, alterations and mutations of AWS S3 Buckets Names
+
+Example:
+
