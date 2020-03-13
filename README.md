@@ -5,3 +5,4 @@ __AWSGen.py__ is a simple tool for generates permutations, alterations and mutat
 
 Example:
 
+![example](https://raw.githubusercontent.com/m4ll0k/AWSGen.py/master/example.png)
