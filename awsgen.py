@@ -6,72 +6,72 @@
 import itertools
 import sys 
 
-def _1(t):
+def _1(t: str) -> str:
 	t=t.split('.')[:-1]
 	return "".join(t)
 
-def _2(t):
+def _2(t: str) -> str:
 	return t
 
-def _3(t):
+def _3(t: str) -> str:
 	t = t.split('.')[:-1]
 	return "-".join(t)
 
-def _4(t):
+def _4(t: str) -> str:
 	t = t.split('.')[:-1]
 	return "_".join(t)
 
-def _5(t):
+def _5(t: str) -> str:
 	return t.replace('.','-')
 
-def _6(t):
+def _6(t: str) -> str:
 	return t.replace('.','_')
 
-def _7(t):
+def _7(t: str) -> str:
 	return "".join(t.split('.'))
 
-def _8(t):
+def _8(t: str) -> str:
 	t = t.split('.')[:-1]
 	return "-".join(t)
 
-def _9(t):
+def _9(t: str) -> str:
 	t = t.split('.')[:-1]
 	return "_".join(t)
 
-def _10(t):
+def _10(t: str) -> str:
 	t = t.split('.')[:-1]
 	return "-".join(t)
 
-def _11(t):
+def _11(t: str) -> str:
 	t = t.split('.')[:-1]
 	return ".".join(t)
 
-def _12(t):
+def _12(t: str) -> str:
 	t = t.split('.')
 	t.reverse()
 	return "-".join(t)
 
-def _13(t):
+def _13(t: str) -> str:
 	t = t.split('.')[:-1]
 	t.reverse()
 	return "-".join(t)
 
-def _14(t):
+def _14(t: str) -> str:
 	t = t.split('.')
 	t.reverse()
 	return "_".join(t)
 
-def _15(t):
+def _15(t: str) -> str:
 	t = t.split('.')[:-1]
 	t.reverse()
 	return "_".join(t)
 
-def _16(t):
+def _16(t: str) -> str:
 	t = t.split('.')
 	t.reverse()
 	return "".join(t)
 
-def _17(t):
+def _17(t: str) -> list:
 	tt = []
 	t = t.split('.')
 	for a,b in enumerate(itertools.chain.from_iterable(itertools.combinations(t,r) for r in range(len(t)+1))):
@@ -81,7 +81,7 @@ def _17(t):
 				tt.append(r)
 	return tt
 
-def main():
+def main() -> None:
 	tt = []
 	t = sys.argv[1]
 	for i in [_1,_3,_2,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17]:
